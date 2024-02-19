@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ULAC S.A. - Confirmacion de Servicios</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Confirmacion de Servicio ULAC</h2>
+        <form>
+            <div class="mb-3">
+                <label for="origin">Lugar de Origen:</label>
+                <input type="text" class="form-control" id="origin" placeholder="Ingrese el lugar de origen" required>
+            </div>
+            <div class="mb-3">
+                <label for="destination">Lugar de Destino:</label>
+                <input type="text" class="form-control" id="destination" placeholder="Ingrese el lugar de destino" required>
+            </div>
+            <div class="mb-3">
+                <label for="estimatedTime">Tiempo Estimado:</label>
+                <input type="text" class="form-control" id="estimatedTime" placeholder="Tiempo estimado calculado por la aplicación" required>
+            </div>
+            <div class="mb-3">
+                <label for="subtotal">Subtotal:</label>
+                <input type="text" class="form-control" id="subtotal" placeholder="Subtotal calculado anteriormente" required>
+            </div>
+            <div class="mb-3">
+                <label>Método de Pago:</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="fullPayment" value="full" checked>
+                    <label class="form-check-label" for="fullPayment">Pago Completo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="paymentMethod" id="partialPayment" value="partial">
+                    <label class="form-check-label" for="partialPayment">Pago Fraccionado (Mitad ahora, mitad en la entrega)</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="cardNumber">Número de Tarjeta:</label>
+                <input type="text" class="form-control" id="cardNumber" placeholder="Ingrese el número de tarjeta" required>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <label for="expiration">Fecha de Vencimiento:</label>
+                    <input type="text" class="form-control" id="expiration" placeholder="MM/AA" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="cvv">Código de Seguridad:</label>
+                    <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Confirmar servicios</button>
+        </form>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
